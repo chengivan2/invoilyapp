@@ -22,12 +22,15 @@ export const EmailLayout = ({ preview, children }: EmailLayoutProps) => {
       <Preview>{preview}</Preview>
       <Body style={main}>
         <Container style={container}>
+          {/* Header */}
           <Section style={header}>
             <Text style={logo}>Invoily</Text>
           </Section>
 
+          {/* Content */}
           <Section style={content}>{children}</Section>
 
+          {/* Footer */}
           <Section style={footer}>
             <Hr style={hr} />
             <Text style={footerText}>
